@@ -2,7 +2,7 @@
 
 Jiani Chen \
 version 1.0.0 \
-date 12/16/2023 \
+date 12/16/2023 
 
 This is the optional homework assignment for 
 QBIO 481: Structural Bioinformatics from Atoms to Cells (Fall 2023)
