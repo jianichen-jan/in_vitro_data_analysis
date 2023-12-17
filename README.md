@@ -7,6 +7,8 @@ date 12/16/2023
 This is the optional homework assignment for 
 QBIO 481: Structural Bioinformatics from Atoms to Cells (Fall 2023)
 
+The original code is courtesy of Tsu Pei Chiu from this [repository](https://github.com/TsuPeiChiu/QBIO481).
+
 ## High-throughput binding assays
 
 ## _in vitro_ experiments SELEX-seq and PBM
