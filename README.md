@@ -30,3 +30,29 @@ Source: [Genome-wide identification of in vivo protein–DNA binding sites from 
 **ChIP-Seq** have a higher number of reads may increase the sensitivity and resolution but it may not necessarily translate to accuracy, as accuracy may be depend on other factors such as antibody specificity, and how stable the protein–DNA complex is. (Raja et al., 2008)
 
 ## Installation
+
+For macOS version 12.5 Apple M2 chip. Install the latest release of [R for macOS](https://cran.r-project.org/bin/macosx/). This is **R 4.3.2 binary for macOS 11 (Big Sur) and higher, signed and notarized packages.** Installation using this method allows the user to directly use the R GUI Console for macOS which can be accessed in Finder or Launhpad -> Applications. This method os using the R GUI Console allows for easy of managing external libraries. I have tried install R and the external libraries using homebrew `brew install R`, but cannot seem to have my R system source the external libraries from the correct directory without changing my UNIX shell to zsh. (So no thank you.)
+
+# Installing dependencies
+The external libraries for this _in vitro_ data analysis setup can now be easily downloaded through the R Console.
+```
+## Install packages
+# Bioconductor
+# https://www.bioconductor.org/install/
+if (!require("BiocManager", quietly = TRUE))
+    install.packages("BiocManager")
+BiocManager::install(version = "3.18")
+
+# DNAshapeR (non developer version)
+# https://www.bioconductor.org/packages/release/bioc/html/DNAshapeR.html
+BiocManager::install("DNAshapeR")
+
+# Caret
+# https://github.com/topepo/caret?tab=readme-ov-file
+install.packages("caret")
+
+# Additionally dependency for Caret:
+# glmnet: Lasso and Elastic-Net Regularized Generalized Linear Models
+# https://rdrr.io/cran/glmnet/
+install.packages("glmnet")
+```
